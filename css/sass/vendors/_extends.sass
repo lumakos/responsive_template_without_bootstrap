@@ -1,0 +1,95 @@
+/********** _extends.sass ********* */
+
+.upperCase 
+	text-transform: uppercase
+	font-weight: 700
+	font-size: 0.8em
+	color: $color_font_descr
+
+.sticky_class
+	position: fixed
+	top: 0
+	left: 0
+
+.position_center
+	margin-left: auto
+	margin-right: auto
+
+.main_wrapper
+	overflow: hidden
+	+border-bottom-left-radius(2px)
+	+border-bottom-right-radius(2px)
+	border-left: 1px solid $color_wrapper_border
+	border-right: 1px solid $color_wrapper_border
+	border-bottom: 1px solid $color_wrapper_border
+
+.boxCategory
+	background-color: $color_btn_add
+	+border-radius(4px)
+	padding: 10px
+	float: left
+	margin: 15px 15px 0 0
+	color: #fff
+
+.clearfix
+	clear: both
+
+.btn_add_style
+	background-color: $color_btn_add
+	+border-radius(4px)
+	padding: 15px 0
+	color: $color_white
+	width: 100%
+	text-align: center
+
+.color-no-1
+	color: rgb(55, 71, 79)
+
+.avatar
+	+border-radius(50%)
+	width: 69px
+	height: 69px
+	background-color: $color_light_gray
+
+.hover 
+	position: relative
+	top: -197px
+	left: 818px
+
+.hover:hover .tooltip
+	opacity: 1
+	padding-top: 20px
+	line-height: 19px
+	text-align: left
+	padding-left: 20px
+
+.hover:hover:before
+	border: solid
+	border-color: #607d8b transparent
+	border-width: 6px 6px 0 6px
+	bottom: 20px
+	content: ""
+	position: absolute
+	z-index: 99
+	left: 2%
+	top: -17px
+
+.tooltip
+	left: -171px
+	background-color: rgb(250, 250, 250)
+	color: $color_white
+	border-radius: 8px
+	border: 1px solid #607d8b
+	opacity: 0
+	position: absolute
+	color: rgb(0, 0, 0)
+	width: 216px
+	height: 71px
+	top: -109px
+
+.movie-section
+	overflow: hidden
+	position: absolute
+	bottom: 45px
+	width: 96.5%
+	margin-right: 20px

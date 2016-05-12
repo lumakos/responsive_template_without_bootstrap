@@ -1,0 +1,160 @@
+/********** _movie_page.sass ********* */
+
+.movie-container-wrapper
+	padding: 0
+	@extend .main_wrapper
+	.top-container
+		overflow: hidden
+		background-color: $color_light_gray
+		padding: 40px 20px 5px
+		position: relative
+		svg
+			height: 400px
+			margin-left: auto
+			margin-right: auto
+			display: block
+			
+			@media (min-width: $width_tablet) 
+				width: 75%
+			@media (max-width: $width_tablet) 
+				width: 100%
+			@media (min-width: $width_laptop) 
+				width: 55%
+		.movie-section
+			.movie-title
+				h2
+					font-size: 24px
+				p
+					margin-top: 5px
+					font-size: 14px
+					color: $color_font_dir
+		.movie-category
+			overflow: hidden
+			float: left
+		.btn-add-movie
+			overflow: hidden
+			float: right
+			@media (min-width: $width_tablet) and (max-width: $width_laptop) 
+				margin-right: 18px
+			@media (max-width: $width_tablet) 
+				width: 100%
+				margin-top: 20px
+			p
+				float: left
+				margin: 0
+				width: 234px
+				@extend .btn_add_style
+	.middle-container
+		padding: 40px 20px
+		overflow: hidden
+		.movie-content
+			float: left
+			width: 65%
+			margin-right: 5%
+			overflow: hidden
+			@media (max-width: $width_laptop) 
+				width: 100%
+				float: none
+			p
+				margin-top: 30px
+				margin-bottom: 30px
+				color: $color_font_descr
+			span
+				color: $color_font_dir
+			.list-of-actors
+				margin-top: 30px
+				ul
+					display: inline-block
+					margin-top: 20px
+					width: 100%
+					li 
+						display: inline-block
+						width: 24%
+						max-width: 24%
+						svg
+							margin-bottom: 10px
+						.actor-name
+							span
+								position: relative
+				#list-of-actors-container 
+					height: 150px
+					text-align: justify
+					font-size: 0.1px
+					min-width: 600px
+					margin-top: 30px
+					@media (max-width: $width_tablet) 
+						height: auto
+						min-width: auto
+						text-align: center
+					div 
+						width: 150px
+						height: 180px
+						display: inline-block
+					&:after 
+						content: ''
+						width: 100%
+						display: inline-block
+					svg
+						@media (max-width: $width_tablet)
+							margin-top: 20px
+		.sidebar
+			float: right
+			width: 30%
+			@media (max-width: $width_laptop) 
+				width: 100%
+				float: none
+			@media (max-width: $width_laptop) 
+				margin-top: 30px
+			.lover-avatar-list
+				margin-top: 30px
+				margin-bottom: 17px
+				.lover-avatar-list-container 
+					margin: -69px 0 0 65px
+					overflow: hidden
+					div 
+						width: 33.3%
+						float: left
+						.avatar 
+							float: right
+							+border-radius(50%)
+							width: 69px
+							height: 69px
+							background-color: $color_light_gray
+	.bottom-container
+		padding: 0 20px
+		overflow: hidden
+		margin-bottom: 20px
+		.map-title
+			float: left
+			h2
+				margin-top: 13px
+		.search-form
+			float: right
+			width: 395px
+			@media (max-width: $width_tablet) 
+				float: left
+				margin-top: 20px
+			svg
+				margin-top: 15px
+				float: left
+				margin-right: 20px
+			input[type="text"]
+				border: 1px solid #999
+				border-radius: 4px
+				-webkit-appearance: none
+				width: 318px
+				padding: 15px
+				margin-bottom: 10px
+				font-size: 15px
+				@media (max-width: $width_mobile_lg)
+					width: 248px
+				&:focus
+					-webkit-transition: all .2s
+					-moz-transition: all .2s
+					-o-transition: all .2s
+					transition: all .2s
+		.map-section
+			text-align: center
+			position: relative
+		svg
+			margin-top: 30px

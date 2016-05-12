@@ -1,0 +1,148 @@
+/********** _main_page.sass **********/
+
+#wrapper
+	overflow: hidden
+.container 
+	margin-top: 59px
+	@extend .position_center
+	width: 1170px
+	max-width: 1170px
+	overflow: hidden
+	background-color: $color_wrapper_bg
+	@media (max-width: $width_tablet) 
+		width: 95%
+	@media (min-width: $width_tablet) 
+		width: 750px
+	@media (min-width: $width_laptop) 
+		width: 970px
+	@media (min-width: $width_desktop) 
+		width: 1170px
+	.container-wrapper
+		padding: 40px 20px
+		@extend .main_wrapper
+		.content
+			float: left
+			width: 65%
+			margin-right: 5%
+			overflow: hidden
+			@media (max-width: $width_laptop) 
+				width: 100%
+				float: none
+			&>ul
+				margin-top: 30px
+				overflow: hidden
+				.avatar
+					+border-radius(50%)
+					width: 60px
+					height: 60px
+					background-color: $color_light_gray
+					float: left
+					margin-right: 25px
+					@media (max-width: $width_desktop) 
+						margin-right: 15px
+					@media (max-width: $width_tablet)
+						display: none
+				.movie-container 
+					float: left
+					width: 88%
+					@media (max-width: $width_tablet) 
+						width: 98%
+					@media (min-width: $width_tablet) and (max-width: $width_desktop)
+						width: 85%
+					border: 1px solid $color_wrapper_border
+					+border-radius(4px)
+					background-color: $color_wrapper_movie_descr_bg
+					position: relative
+					.movie-container-description
+						padding: 20px
+						.movie-user-action
+							&>h2
+								font-size: 18px
+							&>p 
+								margin-top: 3px
+								color: $color_wrapper_border
+						.movie-info
+							margin-top: 40px
+							a
+								font-size: 24px
+								color: $color_black
+							p
+								margin-top: 10px
+								color: rgb(120, 144, 156)
+						.movie-category
+							overflow: hidden
+					.movie-container-footer
+						border-top: 1px solid $color_wrapper_border
+						li 
+							width: 33%
+							float: left
+							text-align: center
+							margin-top: 4px
+							margin-bottom: 15px
+					.image
+						svg
+							position: absolute
+							top: -15px
+							right: 20px
+							@media (max-width: $width_mobile_lg) 
+								display: none
+				li 
+					overflow: hidden
+					margin-bottom: 25px
+					padding-top: 10px
+		.sidebar
+			float: right
+			width: 30%
+			@media (max-width: $width_laptop) 
+				width: 100%
+				float: none
+			.likes_per_month
+				margin-top: 45px
+				overflow: hidden
+				position: relative
+				svg
+					float: left
+				ul
+					margin-left: 25px
+					padding-top: 25px
+					float: left
+					width: 73%
+					@media (min-width: $width_laptop) 
+						width: 67%
+					@media (max-width: $width_mobile_lg) 
+						width: 70%
+					@media (max-width: $width_mobile_md) 
+						width: 65%
+					@media (max-width: $width_mobile_sm) 
+						width: 62%
+					li
+						clear: both 
+						overflow: hidden
+						position: relative
+						margin-bottom: 20px
+						h2 
+							font-size: 20px
+							margin-bottom: 5px
+						p
+							font-size: 14px
+							@media (max-width: $width_mobile_sm) 
+								font-size: 11px
+						svg
+							float: right
+							position: absolute
+							top: 10px
+							right: 0px
+
+			.date
+				position: absolute
+				top: 30px
+				left: 17px
+				text-align: center
+				text-transform: uppercase
+			.likes_per_month_no
+				margin-top: 15px
+			.btn-add-movie
+				p
+					float: left
+					margin: 15px 0 0 0
+					@extend .btn_add_style

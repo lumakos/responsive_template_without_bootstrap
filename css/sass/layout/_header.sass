@@ -1,0 +1,66 @@
+/*********** _header.sass ***********/
+
+.navbar
+	position: relative
+	z-index: 9899
+	width: 100%
+	top: 0
+	left: 0
+	&>.header-wrapper 
+		width: 100%
+		@extend .position_center
+		background-color: $color_header_bg
+		color: $color_white
+		border-bottom: 1px solid $color_black
+		border-top: 1px solid $color_black
+	.header-content
+		width: 1170px
+		max-width: 1170px
+		@extend .position_center
+		overflow: hidden
+		@media (max-width: $width_tablet) 
+			width: 95%
+		@media (min-width: $width_tablet) 
+			width: 750px
+		@media (min-width: $width_laptop) 
+			width: 970px
+		@media (min-width: $width_desktop) 
+			width: 1170px
+		.logo 
+			float: left
+			padding: 19px 20px
+			p
+				color: $color_white
+				font-size: 18px
+			
+		.user
+			float: right
+			padding-right: 20px
+			@media (max-width: $width_mobile_lg) 
+				width: 100%
+				margin-left: 20px
+			.welcome
+				float: left
+				padding: 15px 20px
+				border-left: 1px solid rgb(207, 216, 220)
+				border-right: 1px solid rgb(207, 216, 220)
+				@media (max-width: $width_mobile_lg)
+					border-left: 0
+					border-right: 0
+					padding: 15px 40px
+				svg 
+					float: left
+				p
+					float: right
+					padding: 5px 10px
+			.search
+				float: right
+				padding: 15px 20px
+				border-right: 1px solid rgb(207, 216, 220)
+				@media (max-width: $width_mobile_lg)
+					border-right: 0
+					padding: 15px 0
+.sticky
+	@extend .sticky_class
+	border-left: 0
+	border-right: 0
