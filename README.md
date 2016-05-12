@@ -1,0 +1,1 @@
+# responsive_template_without_bootstrap
